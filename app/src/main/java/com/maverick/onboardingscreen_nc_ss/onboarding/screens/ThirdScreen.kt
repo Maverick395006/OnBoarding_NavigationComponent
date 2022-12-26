@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import androidx.viewpager2.widget.ViewPager2
 import com.maverick.onboardingscreen_nc_ss.R
 import com.maverick.onboardingscreen_nc_ss.databinding.FragmentThirdScreenBinding
 
@@ -21,8 +20,6 @@ class ThirdScreen : Fragment() {
         savedInstanceState: Bundle?,
     ): View {
         _binding = FragmentThirdScreenBinding.inflate(inflater, container, false)
-
-        val viewPager = activity?.findViewById<ViewPager2>(R.id.viewPager)
 
         binding.finish.setOnClickListener {
             findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
